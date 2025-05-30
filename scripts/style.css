@@ -81,6 +81,14 @@
     align-items: center;
     justify-content: center;
   }
+
+  #footer-text {
+    font-size: 0.75rem;
+  }
+
+  #footer-name {
+    color: var(--secondary-color);
+  }
   
   .intro {
     background: var(--accent-color);

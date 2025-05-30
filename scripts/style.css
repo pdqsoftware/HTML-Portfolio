@@ -120,6 +120,12 @@
   .cv-section li {
     margin-bottom: 0.5rem;
   }
+
+  .projects h2 {
+    color: var(--primary-color);
+    text-decoration: underline;
+    padding-bottom: 0.75rem;
+  }
   
   .projects .project-grid {
     display: grid;

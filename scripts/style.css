@@ -107,7 +107,9 @@
   }
   
   .cv-section h2 {
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
+    text-decoration: underline;
   }
   
   .cv-section ul {

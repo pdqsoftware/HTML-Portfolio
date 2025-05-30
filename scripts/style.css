@@ -109,7 +109,7 @@
   .cv-section h2 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
   
   .cv-section ul {
@@ -123,7 +123,7 @@
 
   .projects h2 {
     color: var(--primary-color);
-    text-decoration: underline;
+    /* text-decoration: underline; */
     padding-bottom: 0.75rem;
   }
   

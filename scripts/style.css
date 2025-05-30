@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --primary-color: #6C91BF; /* soft blue */
+    --secondary-color: #F6D6AD; /* peach */
+    --accent-color: #D3E4CD; /* gentle green */
+    --text-color: #333;
+    --background-color: #f9f9f9;
+    --header-footer-bg: #2E3A59;
+    --white: #fff;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  header {
+    background-color: var(--header-footer-bg);
+    color: var(--white);
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2rem 0;
+  }
+  
+  footer {
+    background-color: var(--header-footer-bg);
+    color: var(--white);
+    text-align: center;
+    padding: 0.5rem 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .intro {
+    background: var(--accent-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .personal-statement {
+    background: var(--secondary-color);
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cv-section {
+    margin-bottom: 2rem;
+    background: var(--white);
+    padding: 1.5rem;
+    border-left: 6px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .cv-section h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .cv-section ul {
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cv-section li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    background: var(--white);
+    border-left: 5px solid var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .intro, .personal-statement, .cv-section, .project-card {
+      padding: 1rem;
+    }
+  }

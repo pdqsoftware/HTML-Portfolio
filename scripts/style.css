@@ -162,11 +162,11 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
-  project-github-link-icon {
+  .project-github-link-icon {
     height: 13px;
     width: 13px;
   }
-  
+
   .project-github-link {
     color: var(--primary-color);
     font-size: 0.75rem;

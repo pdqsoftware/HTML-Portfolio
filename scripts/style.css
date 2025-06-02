@@ -161,6 +161,16 @@
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
+
+  .project-github-link {
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    font-family: Courier, 'Courier New', monospace;
+    font-weight: bold;
+  }
+  .project-github-link:hover {
+    text-decoration: none;
+  }
   
   @media (max-width: 768px) {
     nav ul {

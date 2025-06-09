@@ -177,6 +177,37 @@
   .project-github-link:hover {
     text-decoration: none;
   }
+
+  .details-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    font-family: Courier, 'Courier New', monospace;
+    font-weight: bold;
+  }
+
+  .details-tooltip .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .details-tooltip:hover .tooltip-text {
+    visibility: visible;
+  }
   
   @media (max-width: 768px) {
     nav ul {
